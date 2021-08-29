@@ -9,7 +9,7 @@
 
   "servers": [
     {
-      "url": "http://localhost:5000",
+      "url": "https://git.heroku.com/api-cadastrocandidatos.git",
       "description": "ambiente de desenvolvimento"
     }
   ],
