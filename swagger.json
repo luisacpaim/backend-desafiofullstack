@@ -1,0 +1,110 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API Candidatos - Desafio final",
+    "description": "API para conectar e salvar ao Banco de Dados, os dados dos candidatos cadastrados.",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário, recebe dados pessoais e documentos.",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nomeCompleto": {
+                    "type": "string"
+                  },
+                  "dataNascimento": {
+                    "type": "string"
+                  },
+                  "estCivil": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "rua": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "profissao": {
+                    "type": "string"
+                  },
+                  "identidade": {
+                    "type": "string"
+                  },
+                  "CPF": {
+                    "type": "string"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  }
+              },
+              "examples": {
+                "Sample": {
+                  "value": {
+                    "nomeCompleto": "Luísa Cristina",
+                    "dataNascimento": "05/09/1972",
+                    "estCivil": "Solteira(o)",
+                    "genero": "MulherCis",
+                    "cep": "0000000",
+                    "rua": "Rua Luis Eduardo Magalhães",
+                    "numero": "111",
+                    "bairro": "Pedreira",
+                    "cidade": "Cascalho",
+                    "uf": "BA",
+                    "celular": "11111111111",
+                    "email": "luisa@email.com",
+                    "profissao": "Desenvolvedora",
+                    "identidade": "1111111111",
+                    "CPF": "00000000000",
+                    "veiculo": "Sim",
+                    "habilitacao": "B"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
